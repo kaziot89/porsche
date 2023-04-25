@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: black;
+}
+
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+}
+
+#card1 {
+  min-height: 100%;
+}
+.galery {
+  margin: 5% auto 0;
+  max-width: 1920px;
+  max-height: 1000px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.galery .pictures {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  flex: none;
+}
+
+.galery .picture img {
+  width: 100%;
+}
+
+#slogan {
+  display: block;
+  max-width: 1920px;
+  margin: 10px auto 50px;
+  color: rgb(188, 188, 188);
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 120px;
+}
+
+#features {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  margin: 100px auto;
+  color: white;
+}
+
+#featuresPhoto1 {
+  width: 49%;
+  min-width: 920px;
+  margin-bottom: 40px;
+}
+#featuresPhoto2 {
+  width: 49%;
+  min-width: 920px;
+  margin: 40px 0 100px;
+}
+
+.carInfo {
+  font-family: "inter";
+  font-size: 40px;
+  width: 60%;
+  color: rgb(188, 188, 188);
+}
+
+#text1 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+  width: 50%;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  padding: 50px 0px 50px 50px;
+  text-justify: distribute-all-lines;
+  text-align: justify;
+}
+#text2 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+  width: 50%;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  padding: 50px 50px 50px 0px;
+  text-justify: distribute-all-lines;
+  text-align: justify;
+}
+
+#specs {
+  margin: auto 0;
+}
+.specLines {
+  line-height: 150%;
+  align-items: center;
+  color: rgb(188, 188, 188);
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  font-size: 40px;
+}
+#line1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+#specPhoto {
+  min-width: 1000px;
+  max-width: 1170px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+#price {
+  display: inline;
+  color: rgb(188, 188, 188);
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 45px;
+}
+.priceLine {
+  color: rgb(188, 188, 188);
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 45px;
+}
+
+#orderContainer {
+  display: flex;
+  width: 60%;
+  height: 650px;
+  min-width: 600px;
+  flex-direction: column;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+}
+#financeContainer {
+  flex-direction: row;
+  width: 100%;
+  height: 135px;
+  font-size: 24px;
+}
+#finance1,
+#wheels,
+#add1,
+#add2 {
+  margin: 20px 0 20px;
+}
+#pay,
+#equipment {
+  color: rgb(188, 188, 188);
+
+  font-size: 32px;
+}
+#addsContainer {
+  margin-top: 50px;
+  font-size: 24px;
+}
+input,
+select {
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  font-size: 24px;
+  color-scheme: dark;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(137, 137, 137, 0.133);
+
+  border: none;
+  border-radius: 5px;
+  color: rgb(188, 188, 188);
+}
+#customer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.formElements {
+  display: flex;
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+#submitBtns {
+  flex-direction: column;
+  width: 40%;
+  height: 650px;
+}
+#order,
+#returnToMain {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 50px;
+  margin: 0 0 30px;
+  border: 1px solid rgb(188, 188, 188);
+  background: transparent;
+  color: rgb(188, 188, 188);
+  font-size: 30px;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+}
+
+#order:hover,
+#testDrive:hover {
+  color: rgb(150, 0, 0);
+  border: 1px solid rgb(110, 0, 0);
+  transition: 0.2s;
+}
+.formP {
+  width: 500px;
+}
+#orderCompleted {
+  display: flex;
+  width: 40%;
+  height: 650px;
+  flex-direction: column;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+}
+
+.orderDataSpan {
+  display: block;
+  width: 500px;
+  margin: auto 0;
+  line-height: 150%;
+  align-items: center;
+  color: rgb(188, 188, 188);
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  font-size: 32px;
+}
+#congratsContainer {
+  flex-direction: column;
+  width: 50%;
+  height: 650px;
+}
+#congrats {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(188, 188, 188);
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+}
+#orderData {
+  width: 45%;
+}
+.arrow {
+  rotate: 270deg;
+  position: absolute;
+  right: 50px;
+  top: 50vh;
+  width: 30px;
+}
+.arrow2 {
+  rotate: 90deg;
+  position: absolute;
+  left: 50px;
+  top: 50vh;
+  width: 30px;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+#customer2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.form-group {
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@media only screen and (max-width: 2200px) {
+  #card1 {
+    margin: auto;
+    width: 80%;
+    max-width: 1500px;
+  }
+
+  #mainGalery1,
+  #mainGalery2,
+  #mainGalery3,
+  #mainGalery4,
+  #mainGalery5 {
+    max-width: 1500px;
+  }
+  #features {
+    max-width: 1500px;
+  }
+  #featuresPhoto1 {
+    min-width: 80px;
+    height: auto;
+  }
+  #featuresPhoto2 {
+    min-width: 80px;
+    height: auto;
+  }
+  #text1,
+  #text2 {
+    font-size: 32px;
+  }
+  .specLines {
+    font-size: 32px;
+  }
+  #specPhoto {
+    min-width: 800px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1850px) {
+  #card1 {
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+  }
+  #slogan {
+    font-size: 72px;
+  }
+
+  #mainGalery1,
+  #mainGalery2,
+  #mainGalery3,
+  #mainGalery4,
+  #mainGalery5 {
+    max-width: 1200px;
+  }
+  #features {
+    max-width: 1200px;
+  }
+  #featuresPhoto1 {
+    min-width: 60px;
+    height: auto;
+  }
+  #featuresPhoto2 {
+    min-width: 60px;
+    height: auto;
+  }
+  #text1,
+  #text2 {
+    font-size: 24px;
+  }
+  .specLines {
+    font-size: 24px;
+  }
+  #specPhoto {
+    min-width: 600px;
+    height: auto;
+  }
+  .formP {
+    font-size: 18px;
+  }
+  input,
+  select {
+    font-size: 18px;
+  }
+  #pay,
+  #equipment {
+    font-size: 20px;
+  }
+  label {
+    font-size: 18px;
+  }
+  #congratsContainer {
+    width: 700px;
+  }
+  #congrats {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .clientData {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1480px) {
+  #logo {
+    width: 80px;
+  }
+
+  #card1 {
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+  }
+  #slogan {
+    font-size: 72px;
+  }
+
+  #mainGalery1,
+  #mainGalery2,
+  #mainGalery3,
+  #mainGalery4,
+  #mainGalery5 {
+    max-width: 900px;
+  }
+  #features {
+    max-width: 900px;
+  }
+  #featuresPhoto1 {
+    min-width: 40px;
+    height: auto;
+  }
+  #featuresPhoto2 {
+    min-width: 40px;
+    height: auto;
+  }
+  #text1,
+  #text2 {
+    font-size: 18px;
+  }
+  .specLines {
+    font-size: 18px;
+  }
+  #specPhoto {
+    min-width: 400px;
+    height: auto;
+  }
+  #submitBtns {
+    flex-direction: column;
+    width: 10%;
+  }
+  #congratsContainer {
+    width: 540px;
+  }
+
+  @media only screen and (max-width: 1240px) {
+    #card1 {
+      margin: auto;
+      width: 80%;
+      max-width: 600px;
+    }
+    #slogan {
+      font-size: 48px;
+    }
+
+    #mainGalery1,
+    #mainGalery2,
+    #mainGalery3,
+    #mainGalery4,
+    #mainGalery5 {
+      max-width: 600px;
+    }
+    #features {
+      max-width: 600px;
+    }
+    #featuresPhoto1 {
+      min-width: 30px;
+      height: auto;
+    }
+    #featuresPhoto2 {
+      min-width: 30px;
+      height: auto;
+    }
+    .carInfo {
+      padding: 20px 0 20px 20px;
+    }
+    #text1,
+    #text2 {
+      padding: 20px 0 20px 20px;
+      font-size: 16px;
+    }
+    .specLines {
+      font-size: 16px;
+    }
+    #specPhoto {
+      min-width: 200px;
+      height: auto;
+    }
+    #submitBtns {
+      flex-direction: column;
+      width: 10%;
+    }
+    #congratsContainer {
+      width: 400px;
+    }
+  }
+}

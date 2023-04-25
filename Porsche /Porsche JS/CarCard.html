@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CarCard.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <a href="index.html"><img id="logo" src="/pictures/logoy.jpg" alt="" /></a>
+
+    <div id="card1">
+      <div class="galery">
+        <div class="pictures">
+          <span><img id="mainGalery1" src="" alt="" /></span>
+          <span><img id="mainGalery2" src="" alt="" /></span>
+          <span><img id="mainGalery3" src="" alt="" /></span>
+          <span><img id="mainGalery4" src="" alt="" /></span>
+        </div>
+      </div>
+      <img src="pictures/PngItem_2205398.png" class="bounce arrow" />
+      <img src="pictures/PngItem_2205398.png" class="bounce arrow2" />
+      <span id="slogan"></span>
+    </div>
+    <div id="features">
+      <img src="" alt="" id="featuresPhoto1" />
+      <span class="carInfo" id="text1"></span>
+      <span class="carInfo" id="text2"></span>
+      <img src="" alt="" id="featuresPhoto2" />
+
+      <span id="specs">
+        <p class="specLines" id="line1">Dane techniczne:</p>
+        <br />
+        <br />
+        <p class="specLines" id="line2"></p>
+        <p class="specLines" id="line3"></p>
+        <p class="specLines" id="line4"></p>
+        <p class="specLines" id="line5"></p>
+        <p class="specLines" id="line6"></p>
+        <br />
+        <br />
+        <span class="priceLine"
+          >Cena:
+          <p id="price"></p>
+          PLN</span
+        >
+    
+      </span>
+      <img src="" alt="" id="specPhoto" />
+
+      <div id="orderContainer">
+        <div id="financeContainer">
+          <span id="pay">Wybierz sposób finansowania:</span>
+          <div id="finance1">
+            <input type="radio" id="financing1" name="money" value="gotówka" />
+            <label for="financing">Gotówka</label>
+          </div>
+          <div id="finance2">
+            <input type="radio" id="financing2" name="money" value="leasing" />
+            <label for="financing">Leasing</label>
+          </div>
+        </div>
+        <div id="addsContainer">
+          <span id="equipment">Dodatkowe wyposażenie i usługi:</span>
+          <div id="wheels">
+            <input type="checkbox" id="checkboxWheels" name="wheels" />
+            <label for="wheels"
+              >Felgi aluminiowe z oponami zimowymi: + 24000 PLN</label
+            >
+          </div>
+          <div id="guarantee">
+            <input type="checkbox" id="checkboxGuarantee" name="guarantee" />
+            <label for="guarantee"
+              >Dodatkowe dwa lata gwarancji + 18000 PLN</label
+            >
+          </div>
+        </div>
+
+        <form id="customer">
+          <span class="formElements">
+            <label for="name" class="formP">Imię i nazwisko:</label>
+            <input type="text" id="name"/>
+          </span>
+          <span class="formElements"
+            ><label for="email" class="formP">Adres e-mail:</label>
+            <input type="email" id="email"/>
+          </span>
+          <span class="formElements"
+            ><label for="location"class="formP">Miasto odbioru:</label>
+            <select name="nazwa" id="location">
+              <option></option>
+              <option>Białystok</option>
+              <option>Bydgoszcz</option>
+              <option>Gdańsk</option>
+              <option>Katowice</option>
+              <option>Kielce</option>
+              <option>Kraków</option>
+              <option>Lublin</option>
+              <option>Łódź</option>
+              <option>Olsztyn</option>
+              <option>Opole</option>
+              <option>Poznań</option>
+              <option>Rzeszów</option>
+              <option>Szczecin</option>
+              <option>Toruń</option>
+              <option>Warszawa</option>
+              <option>Wrocław</option>
+            </select></span
+          >
+          <span class="formElements"
+            ><label for="date" class="formP">Data odbioru:</label>
+            <input type="date" id="date" data-date-format="DD MMMM YYYY"
+          /></span>
+          </form>
+      </div>
+      <div id="submitBtns">
+        <button id="returnToMain">Powrót do wyboru</button>
+        <button id="order">Złóż zamówienie</button>
+      </div>
+
+      <div id="orderCompleted">
+
+
+        <div id="financeContainer">
+            <span id="pay">Sposób finasowania:</span>
+            <div id="finance1">
+              <p id="financingMethod">financing from local storage</p>
+            </div>
+        </div>
+        
+        <div id="addsContainer">
+          <span id="equipment">Wbrane wyposażenie i usługi dodatkowe:</span>
+          <p id="add1">dodatek1</p>
+          <p id="add2">dodatek2</p>
+        </div>
+
+        <div id="customer2">
+          
+          <div class="form-group">
+            <label for="name">Imię i nazwisko:</label>
+            <span class="clientData" id="nameStorage">Full name from local storage</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adres e-mail:</label>
+            <span class="clientData" id="emailStorage">Addres e-mail from local storage</span>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Miasto odbioru:</label>
+            <span class="clientData" id="locationStorage">Location from local storage</span>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Data odbioru:</label>
+            <span class="clientData" id="dateStorage">Date from local storage</span>
+          </div>
+          
+        </div>
+      </div>
+
+    <div id="congratsContainer">
+      <span id="congrats"
+        >Życzymy Ci niezapomnianych chwil za kierownicą Twojego Porsche - symbolem Twojego stylu życia i indywidualności! Już niedługo nasz konsultant skontaktuje się z Tobą aby ustalić
+        szczegóły Twojego zamówienia.</span
+      >
+    </div>
+  </body>
+  <script src="carCard.js"></script>
+</html>
