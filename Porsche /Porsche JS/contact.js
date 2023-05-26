@@ -8,6 +8,5 @@ contactForm.addEventListener("submit", function (event) {
 
   if (name === "" || email === "" || message === "") {
     alert("Wypełnij wszystkie pola.");
-  } else {
   }
 });

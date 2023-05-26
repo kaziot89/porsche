@@ -7,12 +7,19 @@ const data = [
     text2:
       "Dobry design powinien być pionierski. Tak samo jak technika. I dlatego wnętrze nowego 911 przeciera nowe szlaki – szlaki, które odzwierciedlają stare atuty, a zarazem otwierają nowe możliwości.",
     spec1: "Moc: 385 KM/283 kW",
-    spec2: "Przyspieszenie 0-100 km/h: 4,2 s ",
+    spec2: "Przyspieszenie 0-100 km/h: 4,3 s ",
     spec3: "Prędkość maksymalna: 293 km/h",
     spec4: "spalanie :10,39 - 10,8 l/100 km",
     spec5: "Szerokość: 1852 mm",
     spec6: "Długość: 4519 mm",
     spec7: "648000",
+    img1: "pictures/carreraRed/carrera_red1.jpeg",
+    img2: "pictures/carreraRed/carrera_red2.jpeg",
+    img3: "pictures/carreraRed/carrera_red3.jpeg",
+    img4: "pictures/carreraRed/carrera_red4.jpeg",
+    img5: "pictures/carreraRed/featuresPhoto1.jpg",
+    img6: "pictures/carreraRed/featuresPhoto2.jpg",
+    img7: "pictures/carreraRed/911TSphoto.png",
   },
   {
     id: 2,
@@ -21,13 +28,20 @@ const data = [
       "Modele 718 to samochody stworzone w imię sportu. Ze swoim centralnie umieszczonym silnikiem łączą wyścigowego ducha legendarnego Porsche 718 z cechami auta sportowego przyszłości – a efekt tego połączenia przenoszą na współczesne drogi. W jednym celu: by z każdego dnia wyciągać jak najwięcej.",
     text2:
       "Design - precyzyjny, lecz nie wymyślny. Pewny siebie, ale nie skromny. Sylwetka – niska, szeroka, smukła. Projekt nadwozia modeli 718 zwraca uwagę sportowymi proporcjami i jasno nakreślonymi konturami.",
-    spec1: "Moc: 400 KM/294 kW",
+    spec1: "Moc: 402 KM/294 kW",
     spec2: "Przyspieszenie 0-100 km/h: 4,5 s ",
     spec3: "Prędkość maksymalna: 293 km/h",
     spec4: "spalanie :10,9 - 10,8 l/100 km",
     spec5: "Szerokość: 1856 mm",
     spec6: "Długość: 4509 mm",
     spec7: "593000",
+    img1: "pictures/718Green/box_green1.jpeg",
+    img2: "pictures/718Green/box_green2.jpeg",
+    img3: "pictures/718Green/box_green3.jpeg",
+    img4: "pictures/718Green/box_green4.jpeg",
+    img5: "pictures/718Green/box_green5.jpeg",
+    img6: "pictures/718Green/box-gallery-006.jpeg",
+    img7: "pictures/718Green/boxSpecs.png",
   },
   {
     id: 3,
@@ -43,6 +57,13 @@ const data = [
     spec5: "Szerokość: 1852 mm",
     spec6: "Długość: 4519 mm",
     spec7: "672000",
+    img1: "pictures/911tagra/911tagra1.jpeg",
+    img2: "pictures/911tagra/911tagra2.jpeg",
+    img3: "pictures/911tagra/911tagra3.jpeg",
+    img4: "pictures/911tagra/911tagra4.jpeg",
+    img5: "pictures/911tagra/911tagra5.jpeg",
+    img6: "pictures/911tagra/911tagra6.jpeg",
+    img7: "pictures/911tagra/targa4s.png",
   },
   {
     id: 4,
@@ -58,6 +79,13 @@ const data = [
     spec5: "Szerokość: 1852 mm",
     spec6: "Długość: 4519 mm",
     spec7: "995000",
+    img1: "pictures/gt3white/gt3white1.jpeg",
+    img2: "pictures/gt3white/gt3white2.jpeg",
+    img3: "pictures/gt3white/gt3white3.jpeg",
+    img4: "pictures/gt3white/gt3white4.jpeg",
+    img5: "pictures/gt3white/gt3white5.jpeg",
+    img6: "pictures/gt3white/gt3white6.jpeg",
+    img7: "pictures/gt3white/911-gt3-rs.png",
   },
   {
     id: 5,
@@ -73,6 +101,13 @@ const data = [
     spec5: "Szerokość: 1852 mm",
     spec6: "Długość: 4519 mm",
     spec7: "875000",
+    img1: "pictures/9114s/9114s1.jpeg",
+    img2: "pictures/9114s/9114s2.jpeg",
+    img3: "pictures/9114s/9114s3.jpeg",
+    img4: "pictures/9114s/9114s4.jpeg",
+    img5: "pictures/9114s/9114s5.jpeg",
+    img6: "pictures/9114s/9114s6.jpeg",
+    img7: "pictures/9114s/carrera-4s-techsepc.jpg",
   },
   {
     id: 6,
@@ -88,71 +123,6 @@ const data = [
     spec5: "Szerokość: 1937 mm",
     spec6: "Długość: 5199 mm",
     spec7: "1127000",
-  },
-];
-const images = [
-  {
-    id: 1,
-    img1: "pictures/carreraRed/carrera_red1.jpeg",
-    img2: "pictures/carreraRed/carrera_red2.jpeg",
-    img3: "pictures/carreraRed/carrera_red3.jpeg",
-    img4: "pictures/carreraRed/carrera_red4.jpeg",
-    img5: "pictures/carreraRed/featuresPhoto1.jpg",
-    img6: "pictures/carreraRed/featuresPhoto2.jpg",
-    img7: "pictures/carreraRed/911TSphoto.png",
-  },
-  {
-    id: 2,
-    img1: "pictures/718Green/box_green1.jpeg",
-    img2: "pictures/718Green/box_green2.jpeg",
-    img3: "pictures/718Green/box_green3.jpeg",
-    img4: "pictures/718Green/box_green4.jpeg",
-    img5: "pictures/718Green/box_green5.jpeg",
-    img6: "pictures/718Green/box-gallery-006.jpeg",
-    img7: "pictures/718Green/boxSpecs.png",
-  },
-  {
-    id: 3,
-    img1: "pictures/911tagra/911tagra1.jpeg",
-    img2: "pictures/911tagra/911tagra2.jpeg",
-    img3: "pictures/911tagra/911tagra3.jpeg",
-    img4: "pictures/911tagra/911tagra4.jpeg",
-    img5: "pictures/911tagra/911tagra5.jpeg",
-    img6: "pictures/911tagra/911tagra6.jpeg",
-    img7: "pictures/911tagra/targa4s.png",
-  },
-  {
-    id: 4,
-    img1: "pictures/gt3white/gt3white1.jpeg",
-    img2: "pictures/gt3white/gt3white2.jpeg",
-    img3: "pictures/gt3white/gt3white3.jpeg",
-    img4: "pictures/gt3white/gt3white4.jpeg",
-    img5: "pictures/gt3white/gt3white5.jpeg",
-    img6: "pictures/gt3white/gt3white6.jpeg",
-    img7: "pictures/gt3white/911-gt3-rs.png",
-  },
-  {
-    id: 5,
-    img1: "pictures/9114s/9114s1.jpeg",
-    img2: "pictures/9114s/9114s2.jpeg",
-    img3: "pictures/9114s/9114s3.jpeg",
-    img4: "pictures/9114s/9114s4.jpeg",
-    img5: "pictures/9114s/9114s5.jpeg",
-    img6: "pictures/9114s/9114s6.jpeg",
-    img7: "pictures/9114s/carrera-4s-techsepc.jpg",
-  },
-  {
-    id: 5,
-    img1: "pictures/9114s/9114s1.jpeg",
-    img2: "pictures/9114s/9114s2.jpeg",
-    img3: "pictures/9114s/9114s3.jpeg",
-    img4: "pictures/9114s/9114s4.jpeg",
-    img5: "pictures/9114s/9114s5.jpeg",
-    img6: "pictures/9114s/9114s6.jpeg",
-    img7: "pictures/9114s/9114s6.jpeg",
-  },
-  {
-    id: 6,
     img1: "pictures/panamera/panamera1.jpeg",
     img2: "pictures/panamera/panamera2.jpeg",
     img3: "pictures/panamera/panamera3.jpeg",
@@ -161,13 +131,14 @@ const images = [
     img7: "pictures/panamera/panameraTechSpecs.jpg",
   },
 ];
+
 // odczytanie parametru id z adresu URL
 const urlParams = new URLSearchParams(window.location.search);
 const id = parseInt(urlParams.get("id"));
 
 // znalezienie danych o podanym id...
 const selectedData = data.find((item) => item.id === id);
-const selectedImages = images.find((item) => item.id === id);
+const selectedImages = data.find((item) => item.id === id);
 
 // ustawienie wartości elementów na wartości z danych
 document.querySelector("#slogan").innerText = selectedData.slogan;
@@ -265,13 +236,21 @@ inputLocation.addEventListener("change", function () {
   const locationValue = inputLocation.value;
   localStorage.setItem("clientLocation", locationValue);
 });
-// inputLocation.value = localStorage.getItem("clientLocation") || "";
+inputLocation.value = localStorage.getItem("clientLocation") || "";
 
 inputDate.addEventListener("change", function () {
-  const dateValue = inputDate.value;
-  localStorage.setItem("dateOfReceipt", dateValue);
+  const selectedDate = new Date(inputDate.value);
+  const today = new Date();
+
+  if (selectedDate < today) {
+    alert("Data nie może być wcześniejsza niż dzisiejsza!");
+    inputDate.value = localStorage.getItem("dateOfReceipt") || "";
+  } else {
+    const dateValue = inputDate.value;
+    localStorage.setItem("dateOfReceipt", dateValue);
+  }
 });
-// inputDate.value = localStorage.getItem("dateOfReceipt") || "";
+inputDate.value = localStorage.getItem("dateOfReceipt") || "";
 
 const orderContainer = document.getElementById("orderContainer");
 const orderCompleted = document.getElementById("orderCompleted");
@@ -358,4 +337,21 @@ orderButton.addEventListener("click", function () {
   dateElement.textContent = date;
 
   clearInput();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    var images = document.getElementsByClassName("bounce");
+    var halfPageHeight = window.innerHeight / 100;
+    var scrollPosition = window.scrollY || window.pageYOffset;
+
+    for (var i = 0; i < images.length; i++) {
+      var image = images[i];
+
+      if (scrollPosition > halfPageHeight) {
+        image.style.visibility = "hidden";
+      } else {
+        image.style.visibility = "visible";
+      }
+    }
+  });
 });
